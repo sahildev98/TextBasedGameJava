@@ -13,5 +13,6 @@ public interface Character {
     
    void eat();
    void bite();
+   void move();
 }
 
