@@ -10,9 +10,14 @@ package com.mycompany.textbasedgame;
  * @author Sahil
  */
 public class Child extends Person {
-    
+    private String attack;
     public Child(String name, int age, String gender, int health) {
         super(name, age, gender, health);
     }
     
+    public void attack(){
+        String attack_Msg = "Attack!!!";
+        System.out.println(attack_Msg);
+        System.out.println(" is attacking ");
+    }
 }
