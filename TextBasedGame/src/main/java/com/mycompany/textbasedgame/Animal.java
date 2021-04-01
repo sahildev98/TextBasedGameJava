@@ -10,5 +10,15 @@ package com.mycompany.textbasedgame;
  * @author Sahil
  */
 public class Animal {
-    
+    private String name;
+    private int age;
+    private String gender;
+    private int health; 
+
+    public Animal(String name, int age, String gender, int health) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.health = health;
+    }
 }
