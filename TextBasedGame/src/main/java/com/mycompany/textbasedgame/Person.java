@@ -14,4 +14,11 @@ public abstract class Person {
     String age;
     String gender;
     int health; 
+
+    public Person(String name, String age, String gender, int health) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.health = health;
+    }
 }
