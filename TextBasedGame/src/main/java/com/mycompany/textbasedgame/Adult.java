@@ -9,6 +9,10 @@ package com.mycompany.textbasedgame;
  *
  * @author Sahil
  */
-public class Adult {
+public class Adult extends Person{
+    
+    public Adult(String name, int age, String gender, int health) {
+        super(name, age, gender, health);
+    }
     
 }
