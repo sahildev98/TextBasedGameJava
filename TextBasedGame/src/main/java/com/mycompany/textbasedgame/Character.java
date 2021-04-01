@@ -9,6 +9,16 @@ package com.mycompany.textbasedgame;
  *
  * @author Sahil
  */
-public class Character {
-    
+public abstract class Character {
+    private String name;
+    private String age;
+    private String gender;
+    private int health; 
+
+    public Character(String name, String age, String gender, int health) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.health = health;
+    } 
 }
