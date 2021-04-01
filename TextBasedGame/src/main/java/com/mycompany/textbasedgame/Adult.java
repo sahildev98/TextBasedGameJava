@@ -10,15 +10,27 @@ package com.mycompany.textbasedgame;
  * @author Sahil
  */
 public class Adult extends Person{
-    String job;
-    public Adult(String name, int age, String gender, int health, String job) {
+    private String job;
+    public Adult(String name, int age, String gender, int health, String job, String grounded) {
         super(name, age, gender, health);
         this.job = job;
     }
     
-    public void groundChild(String child){
-        System.out.println("You're grounded!");
-        System.out.println("Game Over!");
+    public void issueBan(){
+        String grounded = " you're banned";
+        System.out.println(grounded);
     }
     
+    public String getJob() {
+        return job;
+    }
+    
+    public void setJob(String newJob){
+       job = newJob;
+    }
+          
+    
+    public void jobAttack(){
+        System.out.println("" + getJob() + " attacks ");
+    }
 }
