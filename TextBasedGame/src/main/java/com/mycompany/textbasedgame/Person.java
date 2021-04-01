@@ -21,4 +21,12 @@ public class Person {
         this.gender = gender;
         this.health = health;
     }
+    
+     public String getName(){
+        return this.name;
+    }
+    
+    public void setName(String newName){
+        this.name = newName;
+    }
 }
