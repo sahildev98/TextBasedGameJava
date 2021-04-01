@@ -9,13 +9,13 @@ package com.mycompany.textbasedgame;
  *
  * @author Sahil
  */
-public abstract class Person {
-    String name;
-    String age;
-    String gender;
-    int health; 
+public class Person {
+    private String name;
+    private int age;
+    private String gender;
+    private int health; 
 
-    public Person(String name, String age, String gender, int health) {
+    public Person(String name, int age, String gender, int health) {
         this.name = name;
         this.age = age;
         this.gender = gender;
