@@ -9,6 +9,9 @@ package com.mycompany.textbasedgame;
  *
  * @author Sahil
  */
-public class Person {
-    
+public abstract class Person {
+    String name;
+    String age;
+    String gender;
+    int health; 
 }
