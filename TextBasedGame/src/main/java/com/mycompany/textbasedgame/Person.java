@@ -9,7 +9,7 @@ package com.mycompany.textbasedgame;
  *
  * @author Sahil
  */
-public class Person {
+public abstract class Person {
     private String name;
     private int age;
     private String gender;
@@ -39,7 +39,7 @@ public class Person {
     }
     
     public String getGender(){
-        return gender;
+        return this.gender;
     }
     
     public void setGender(String newGender){
