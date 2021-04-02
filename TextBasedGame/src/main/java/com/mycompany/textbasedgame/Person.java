@@ -29,4 +29,28 @@ public class Person {
     public void setName(String newName){
         this.name = newName;
     }
+    
+    public int getAge(){
+      return age;
+    }
+    
+    public void setAge(int newAge){
+      age =  newAge;
+    }
+    
+    public String getGender(){
+        return gender;
+    }
+    
+    public void setGender(String newGender){
+        gender = newGender;
+    }
+    
+    public int getHealth(){
+        return health;
+    }
+    
+    public void setHhealth(int newAge){
+       age = newAge;
+    }
 }
