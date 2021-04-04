@@ -11,23 +11,33 @@ package com.mycompany.textbasedgame;
  */
 public abstract class Person {
     private String name;
+    private String nickname;
     private int age;
     private String gender;
     private int health; 
 
-    public Person(String name, int age, String gender, int health) {
+    public Person(String name, String nickname, int age, String gender, int health) {
         this.name = name;
+        this.nickname =  nickname;
         this.age = age;
         this.gender = gender;
         this.health = health;
     }
     
      public String getName(){
-        return this.name;
+        return name;
     }
     
     public void setName(String newName){
-        this.name = newName;
+        name = newName;
+    }
+    
+    public String getNickanme(){
+        return nickname;
+    }
+    
+    public void setNickname(String newNickname){
+        nickname = newNickname;
     }
     
     public int getAge(){
