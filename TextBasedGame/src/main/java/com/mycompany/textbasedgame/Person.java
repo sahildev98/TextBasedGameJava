@@ -63,4 +63,8 @@ public abstract class Person {
     public void setHhealth(int newAge){
        age = newAge;
     }
+    
+    public abstract void move();
+    
+    public abstract void attack();
 }
