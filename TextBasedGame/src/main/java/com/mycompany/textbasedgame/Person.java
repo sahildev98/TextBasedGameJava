@@ -10,26 +10,32 @@ package com.mycompany.textbasedgame;
  * @author Sahil
  */
 public abstract class Person {
-    private String name;
+    private String forename;
+    private String surname;
     private String nickname;
     private int age;
     private String gender;
     private int health; 
 
-    public Person(String name, String nickname, int age, String gender, int health) {
-        this.name = name;
+    public Person(String name, String surname, String nickname, int age, String gender, int health) {
+        this.forename = forename;
+        this.surname  = surname;
         this.nickname =  nickname;
         this.age = age;
         this.gender = gender;
         this.health = health;
     }
     
-     public String getName(){
-        return name;
+     public String getForeName(){
+        return forename;
     }
     
-    public void setName(String newName){
-        name = newName;
+    public void setForename(String newForename){
+        forename = newForename;
+    }
+    
+    public void getSurname(String newSurname){
+        surname = newSurname;
     }
     
     public String getNickanme(){
