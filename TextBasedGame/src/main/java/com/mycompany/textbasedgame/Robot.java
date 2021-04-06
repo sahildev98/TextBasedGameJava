@@ -15,9 +15,10 @@ public class Robot {
     private int serialNum;
     private int health; 
 
-    public Robot(String name, String gender, int health) {
+    public Robot(String name, String gender, int serialNum, int health) {
         this.name = name;
         this.gender = gender;
+        this.serialNum = serialNum;
         this.health = health;
     }
     
