@@ -26,7 +26,7 @@ public abstract class Person {
         this.health = health;
     }
     
-     public String getForeName(){
+     public String getForename(){
         return forename;
     }
     
@@ -38,7 +38,7 @@ public abstract class Person {
         surname = newSurname;
     }
     
-    public String getNickanme(){
+    public String getNickname(){
         return nickname;
     }
     
