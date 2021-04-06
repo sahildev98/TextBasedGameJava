@@ -21,4 +21,36 @@ public class Animal {
         this.gender = gender;
         this.health = health;
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setName(String newName){
+        name = newName;
+    }
+    
+    public int getAge(){
+        return age;
+    }
+    
+    public void setAge(int newAge){
+        age = newAge;
+    }
+    
+    public String getGender(){
+        return gender;
+    }
+    
+    public void setGender(String newGender){
+        gender = newGender;
+    }
+    
+    public int getHealth(){
+        return health;
+    }
+    
+    public void setHealth(int newAge){
+        age = newAge;
+    }
 }
