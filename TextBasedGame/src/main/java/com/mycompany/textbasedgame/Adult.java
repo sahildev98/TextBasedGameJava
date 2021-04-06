@@ -11,8 +11,8 @@ package com.mycompany.textbasedgame;
  */
 public class Adult extends Person{
     private String job;
-    public Adult(String name, int age, String gender, int health, String job, String grounded) {
-        super(name, age, gender, health);
+    public Adult(String forename, String surname,String nickname, int age, String gender, int health, String job) {
+        super(forename, surname, nickname, age, gender, health);
         this.job = job;
     }
     
@@ -31,6 +31,16 @@ public class Adult extends Person{
           
     
     public void jobAttack(){
-        System.out.println("" + getJob() + " attacks ");
+        System.out.println(getJob() + " attacks ");
+    }
+
+    @Override
+    public void move() {
+        System.out.println(" is moving ");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println(" is attacking ");
     }
 }
