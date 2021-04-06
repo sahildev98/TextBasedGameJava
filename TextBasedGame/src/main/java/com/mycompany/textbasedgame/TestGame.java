@@ -34,6 +34,36 @@ public class TestGame {
         Robot gnashinator = new Robot("Gnashinator", "Male", 566789, 40);
         
         
+        ArrayList<String> locations = new ArrayList<String>();
+        locations.add("The front room");
+        locations.add("The treehouse");
+        locations.add("The park");
+        locations.add("MI 13 Secret Service headqueaters");
+        locations.add("Bash Street School");
+        
+        ArrayList<String> items = new ArrayList<String>();
+        items.add("Catapults");
+        items.add("Pies");
+        items.add("Skateboards");
+        items.add("Sausages");
+        items.add("Hats");
+        items.add("Masks");
+        items.add("Fake beard");
+        
+        System.out.println("Welcome to Dennis The meneance Text Editior Game!");
+        System.out.println("Do you want to start the game?"  + "\n" +  "Enter yes or no.");
+        String start = in.nextLine();
+        if(start.equals ("Yes") || start.equals ("yes")){
+            System.out.println("You have entered the Menance World!");
+        } else{
+            System.out.println("Game over");
+        }
+        System.out.println("Where you want to enter first with " + dennis.getForename()+ "?" + "\n" + "Enter any of the following locations: ");
+        for(String i: locations){
+            System.out.println(i);
+        }
+        String enter = in.nextLine();
+        
         
         
         
