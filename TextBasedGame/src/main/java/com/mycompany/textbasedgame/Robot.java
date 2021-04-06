@@ -12,11 +12,44 @@ package com.mycompany.textbasedgame;
 public class Robot {
     private String name;
     private String gender;
+    private int serialNum;
     private int health; 
 
     public Robot(String name, String gender, int health) {
         this.name = name;
         this.gender = gender;
         this.health = health;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setName(String getName){
+        name = getName;
+    }
+    
+    public String getGender(){
+        return gender;
+    }
+    
+    public void setGender(String newGender){
+        gender = newGender;
+    }
+    
+    public int getSerialNum(){
+        return serialNum;
+    }
+    
+    public void setSerialNum(int newSerialNum){
+        serialNum = newSerialNum;
+    }
+    
+    public int getHealth(){
+        return health;
+    }
+    
+    public void setHealth(int newHealth){
+        health = newHealth;
     }
 }
