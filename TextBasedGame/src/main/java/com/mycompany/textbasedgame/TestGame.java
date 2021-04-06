@@ -34,6 +34,7 @@ public class TestGame {
         Robot gnashinator = new Robot("Gnashinator", "Male", 566789, 40);
         
         
+
         ArrayList<String> locations = new ArrayList<String>();
         locations.add("The front room");
         locations.add("The treehouse");
@@ -64,6 +65,7 @@ public class TestGame {
         }
         String enter = in.nextLine();
         
+
         
         
         
