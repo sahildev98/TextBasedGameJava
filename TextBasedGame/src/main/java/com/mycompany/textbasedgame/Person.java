@@ -17,7 +17,7 @@ public abstract class Person {
     private String gender;
     private int health; 
 
-    public Person(String name, String surname, String nickname, int age, String gender, int health) {
+    public Person(String forename, String surname, String nickname, int age, String gender, int health) {
         this.forename = forename;
         this.surname  = surname;
         this.nickname =  nickname;
@@ -34,7 +34,11 @@ public abstract class Person {
         forename = newForename;
     }
     
-    public void getSurname(String newSurname){
+    public String getSurname(){
+        return surname;
+    }
+    
+    public void setSurname(String newSurname){
         surname = newSurname;
     }
     
@@ -70,7 +74,15 @@ public abstract class Person {
        age = newAge;
     }
     
-    public abstract void move();
+    public void reduceHealth(){
+        health-=10;
+    }
     
-    public abstract void attack();
+    public void increaseHealth(){
+        health+=10;
+    }
+    
+    public abstract String move();
+    
+    public abstract String attack();
 }
