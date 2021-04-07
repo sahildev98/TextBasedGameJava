@@ -20,14 +20,16 @@ public class Adult extends Person{
     }
     
     public void issueBan(){
-        String grounded = " you're grounded ";
+        String grounded = " you're grounded! ";
         System.out.println(grounded);
         System.out.println("Do you want to make up for this?" + "\n" + "Enter yes or no");
         String chance = in.nextLine();
         if(chance.equals ("Yes")|| chance.equals("yes")){
             System.out.println("Clean all the house for three days and your ban is off!");
+            System.out.println("Three days latere...");
+            System.out.println("Your ban is off now you can do what you wish!");
         } else {
-            System.out.println("Still Grounded" + "\n" + "GAME OVER!!!" + " START GAME AGAIN");
+            System.out.println("Still Grounded" + "\n" + "GAME OVER!!!" + "\n" + "START GAME AGAIN");
             System.exit(0);
         }   
     }
