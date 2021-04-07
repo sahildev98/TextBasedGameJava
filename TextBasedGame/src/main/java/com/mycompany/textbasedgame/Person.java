@@ -84,5 +84,7 @@ public abstract class Person {
     
     public abstract String move();
     
+    public abstract String noMovement();
+    
     public abstract String attack();
 }
