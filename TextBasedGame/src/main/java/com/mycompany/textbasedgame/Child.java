@@ -26,15 +26,7 @@ public class Child extends Person {
 
     @Override
     public String move() {
-        System.out.println("Do you want to move to another location?" + "\n"  + "Enter yes or no.");
-        String move = in.nextLine();
-        if(move.equals("Yes") || move.equals("yes")){
-            String moveMsg = getForename()+ " is moving";
-            return moveMsg;
-        } else {
-            String noMove = " is not moving.";
-            return noMove;
-        }
-        
+        String moveMsg = getForename()+ " is moving ";
+        return moveMsg;       
     }
 }
