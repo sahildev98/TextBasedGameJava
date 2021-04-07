@@ -19,8 +19,8 @@ public class Child extends Person {
     
     @Override
     public String attack(){
-        String noAttack = getForename() + " is attacking ";
-        return noAttack;
+        String attack = getForename() + " is attacking ";
+        return attack;
           
     }
 
@@ -28,5 +28,11 @@ public class Child extends Person {
     public String move() {
         String moveMsg = getForename()+ " is moving ";
         return moveMsg;       
+    }
+    
+    @Override
+    public String noMovement(){
+        String noMovement = getForename() +  " is not moving";
+        return noMovement;
     }
 }
