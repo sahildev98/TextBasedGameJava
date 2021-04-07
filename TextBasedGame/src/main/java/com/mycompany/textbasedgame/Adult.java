@@ -52,10 +52,16 @@ public class Adult extends Person{
         String move = " is moving ";
         return move;
     }
+    
+    @Override
+    public String noMovement(){
+        String noMovement = getForename() +  " is not moving";
+        return noMovement;
+    }
 
     @Override
     public String attack() {
-        String attack = " is attacking ";
+        String attack = getForename() + " is attacking ";
         return attack;
     }
 }
