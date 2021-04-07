@@ -18,27 +18,23 @@ public class Child extends Person {
     }
     
     @Override
-    public void attack(){
-        System.out.println("Do you want to attack?");
-        String attack = in.nextLine();
-        if(attack.equals("Yes")|| attack.equals("yes")){
-        String attack_Msg = "Attack!!!";
-        System.out.println(attack_Msg);
-        System.out.println(" is attacking ");
-        } else {
-            System.out.println(" is not attacking");
-        }
-        
+    public String attack(){
+        String noAttack = getForename() + " is attacking ";
+        return noAttack;
+          
     }
 
     @Override
-    public void move() {
+    public String move() {
         System.out.println("Do you want to move to another location?" + "\n"  + "Enter yes or no.");
         String move = in.nextLine();
-        if(move.equals("Yes") || move.equals("Yes")){
-            System.out.println(" is moving ");
+        if(move.equals("Yes") || move.equals("yes")){
+            String moveMsg = getForename()+ " is moving";
+            return moveMsg;
         } else {
-            System.out.println(" is not moving.");
+            String noMove = " is not moving.";
+            return noMove;
         }
+        
     }
 }
