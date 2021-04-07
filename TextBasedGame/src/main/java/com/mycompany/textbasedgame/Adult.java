@@ -25,9 +25,10 @@ public class Adult extends Person{
         System.out.println("Do you want to make up for this?" + "\n" + "Enter yes or no");
         String chance = in.nextLine();
         if(chance.equals ("Yes")|| chance.equals("yes")){
-            System.out.println("Clean all the house for three days and you're ban is off!");
+            System.out.println("Clean all the house for three days and your ban is off!");
         } else {
-            System.out.println("Still Grounded" + "\n" + "GAME OVER!!!");
+            System.out.println("Still Grounded" + "\n" + "GAME OVER!!!" + " START GAME AGAIN");
+            System.exit(0);
         }   
     }
     
