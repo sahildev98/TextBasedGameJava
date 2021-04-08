@@ -12,13 +12,20 @@ import java.util.Scanner;
  * @author Sahil
  */
 public class Adult extends Person{
+    // Scannner is implemeneted user input
     static Scanner in = new Scanner(System.in);
+    
+    /* Task 1 Question a) 
+    Adult class inherits superclass Person.  
+    The class now has access to all methods and instances.*/
     private String job;
     public Adult(String forename, String surname,String nickname, int age, String gender, int health, String job) {
         super(forename, surname, nickname, age, gender, health);
         this.job = job;
     }
     
+    // Task 1 Question a)
+    // Issueban method that is used to ban children. 
     public void issueBan(){
         String grounded = " you're grounded! ";
         System.out.println(grounded);
@@ -34,6 +41,8 @@ public class Adult extends Person{
         }   
     }
     
+    //Task 1 Question a) and Question e)
+    // getters and setters to allow access to private job variable. 
     public String getJob() {
         return job;
     }
@@ -41,12 +50,17 @@ public class Adult extends Person{
     public void setJob(String newJob){
        job = newJob;
     }
-          
     
-    public void jobAttack(){
-        System.out.println(getJob() + " attacks ");
+    // //Task 1 Question a)
+    // methods for adults to use for their professtion. 
+    public void jobAttack(Child theEnemyChild){
+        System.out.println(getForename()+ getJob() + " grabs " + theEnemyChild.getForename());
+        System.out.println("YOU HAVE BEEN CAUGHT!" + "\n"+  "GAME OVER" + "START AGAIN TO PLAY");
+        System.exit(0);
     }
-
+    
+    // //Task 1 Question a)
+    // abstract methods that have been inherited from person class and have been altered in thier own way. 
     @Override
     public String move() {
         String move = " is moving ";
@@ -60,8 +74,10 @@ public class Adult extends Person{
     }
 
     @Override
-    public String attack() {
-        String attack = getForename() + " is attacking ";
-        return attack;
+    public void attack(Person theEnemy) {
+        System.out.println(getForename() + " is attacking " + theEnemy.getForename());
+        theEnemy.reduceHealth();
+        System.out.println(theEnemy.getForename() + " now has a health of " + theEnemy.getHealth());
+        
     }
 }

@@ -10,6 +10,9 @@ package com.mycompany.textbasedgame;
  * @author Sahil
  */
 public abstract class Person {
+    // Task 1 Question a)
+    // Private variables created to only allow classes that inherits this class alone. 
+    // Also to achieve escapsluation. 
     private String forename;
     private String surname;
     private String nickname;
@@ -17,6 +20,8 @@ public abstract class Person {
     private String gender;
     private int health; 
 
+    //  Task 1 Question a)
+    // Constructor is a method used to initiaise objects i.e the characters with specfieid attributes.  
     public Person(String forename, String surname, String nickname, int age, String gender, int health) {
         this.forename = forename;
         this.surname  = surname;
@@ -25,7 +30,8 @@ public abstract class Person {
         this.gender = gender;
         this.health = health;
     }
-    
+    // Task 1 Question a) and quesstion e)
+    // Getters and Setters to allow access to all classes that inherits this class.
      public String getForename(){
         return forename;
     }
@@ -73,7 +79,8 @@ public abstract class Person {
     public void setHhealth(int newAge){
        age = newAge;
     }
-    
+    // Task 2 Question b)
+    // Methods that are very useful for the game to achieve certain element of the game.  
     public void reduceHealth(){
         health-=10;
     }
@@ -82,9 +89,14 @@ public abstract class Person {
         health+=10;
     }
     
+    /*
+    Task 1 Question a)
+    Abstract methods ususally are created for fundamenetals tasks, 
+     for all classes that inherits this class. 
+    */
     public abstract String move();
     
     public abstract String noMovement();
     
-    public abstract String attack();
+    public abstract void attack(Person theEnemy);
 }

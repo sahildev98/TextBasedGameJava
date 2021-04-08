@@ -9,12 +9,18 @@ package com.mycompany.textbasedgame;
  *
  * @author Sahil
  */
-public class Robot {
+public class Robot implements Character {
+    /* Task 1 Question c
+    Private variables are created to only allow objects to use these instances. 
+     Also to achieve escapsluation. Robot class also implements Character Class. 
+    */
     private String name;
     private String gender;
     private int serialNum;
     private int health; 
-
+    
+    // Task 1 Question c
+    // Constructor is a method used to initiaise objects i.e the characters with specfieid attributes.
     public Robot(String name, String gender, int serialNum, int health) {
         this.name = name;
         this.gender = gender;
@@ -22,6 +28,8 @@ public class Robot {
         this.health = health;
     }
     
+    // Task 1 Question c) and quesstion e) 
+    //Getters and Setters to allow access from private varibles 
     public String getName(){
         return name;
     }
@@ -52,5 +60,28 @@ public class Robot {
     
     public void setHealth(int newHealth){
         health = newHealth;
+    }
+    // //Task 2 Question b)
+    // Methods that are very useful for the game to achieve certain element of the game.
+    public void reduceHealth(){
+       health-=10;
+    }
+    
+    public void increaseHealth(){
+        health+=10;
+    }
+    
+    //Task 1 Question a)
+    // Abstracte methods
+    @Override
+    public String bite() {
+        String bite = getName() +  " is biting ";
+        return bite;
+    }
+
+    @Override
+    public String move() {
+        String move = getName() +  " is moving ";
+        return move;
     }
 }

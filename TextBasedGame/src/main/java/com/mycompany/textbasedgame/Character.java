@@ -10,9 +10,17 @@ package com.mycompany.textbasedgame;
  * @author Sahil
  */
 public interface Character {
-    
-   void eat();
-   void bite();
-   void move();
+    // Task 1 Question c
+    /**
+     *
+     * @return a string that bites somebody. 
+     */
+    String bite();
+
+    /**
+     *
+     * @return a string that shows somebody is moving.
+     */
+    String move();
 }
 
